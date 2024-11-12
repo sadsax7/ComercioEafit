@@ -1,0 +1,47 @@
+{% extends "ComercioEafitApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+  <!-- Heading -->
+   <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'ComercioEafitApp/img/dinero.jpg' %}" alt="">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4" >
+            <span class="section-heading-upper">¡ La unica pagina de comercio de EAFIT !</span>
+            <span class="section-heading-lower">Comercio de Emprendedores</span>
+          </h2>
+          <p class="mb-3">Aca encontraras a los mejores emprendedores de la universidad EAFIT, con los mejores productos y a un mejor precio que del mercado.
+          </p>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Message -->
+    <section class="page-section cta" style="background-color: black; background-size: cover; background-position: center;">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded" style="background-color: rgba(0, 0, 0, 0.5); padding: 20px;">
+              <h2 class="section-heading mb-4" style="color: white;">
+                <span class="section-heading-upper">Compromiso con EAFIT</span>
+                <span class="section-heading-lower">Garantizado</span>
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'ComercioEafitApp/img/eafit.jpg' %}" alt="">
+              </h2>
+              <p class="mb-0" style="color: white;">Pagina de Comercio la cual llevara a los emprendedores al siguiente nivel en esta universidad que tanto fomenta el ser emprendedor y hacerse valer por si mismo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+{% endblock %}
