@@ -1,7 +1,7 @@
 class Carro:
 
     def __init__(self, request):
-        '''
+        
         self.request = request
         self.session = request.session
         # Inicializa el carro en la sesión si no existe
@@ -9,8 +9,9 @@ class Carro:
         
         if not carro:
             carro = self.session["carro"] = {}
-        '''
+        
         self.carro = carro
+        
 
 
     def agregar(self, producto):
@@ -33,10 +34,12 @@ class Carro:
         self.guardar_carro()
 
 
+
     def guardar_carro(self):
         # Actualiza la sesión con el estado actual del carro y marca como modificada
         self.session["carro"] = self.carro
         self.session.modified = True
+
 
 
     def eliminar(self, producto):
@@ -44,6 +47,7 @@ class Carro:
         if producto_id in self.carro:
             del self.carro[producto_id]  # Elimina el producto del carro
             self.guardar_carro()
+
 
 
     def restar_producto(self, producto):
